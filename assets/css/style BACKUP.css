@@ -1,0 +1,124 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.row {
+    background-color: rgb(46, 50, 80);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 700px;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+.col {
+/* display: flex;
+flex-direction: column;
+flex-basis: 100%;
+flex: 1; */
+    /* min-height: 770px; */
+    height: 100%;
+}
+
+.divider {
+    width: 4px;
+    height: 100vh;
+    margin-left: 30px;
+    background: radial-gradient(circle, rgb(204, 201, 219) 0%, rgba(0,212,255,0) 100%)
+}
+
+.side {
+    min-height: 770px;
+    height: 100vh;
+    position: relative;
+    width: 7rem;
+    background-color: rgb(46, 50, 80);
+    /* padding: 0 4px; */
+
+}
+.gradient {
+
+    background: linear-gradient(to right, red, purple)
+}
+
+.side p {
+
+    margin: 0;
+    position: absolute;
+    bottom: 37%;
+    left: -300px;
+    transform: rotate(-90deg);
+    font-family: 'Secular One', sans-serif;
+    font-size: 9em;
+    opacity: 100;
+    color: rgb(204, 201, 219);
+    /* text-shadow: 0 0 2px white; */
+}
+
+.main {
+    flex: 2;
+    padding: 50px 0 0 0;
+    margin-bottom: 50px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.main p, ul{
+    margin: 0 50px 0 50px;
+    background-color: ;
+    color: rgb(204, 201, 219);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+.indent {
+    padding: 0 20px 0 60px;
+}
+
+.name, .about, .skills {
+    width: auto;
+    display: inline-block;
+    border-radius: 10px;
+    opacity: 40%;
+    transition: .8s all;
+}
+
+div#name:hover .name,
+div#about:hover .about, 
+div#skills:hover .skills {
+    background-color: rgba(255, 255, 255, 0.384);
+    opacity: 80%;
+}
+
+div#about:hover .key {
+    font-weight: bolder;
+    color: rgb(0, 225, 255);
+    text-shadow: 0 3px 3px black;
+    /* transition: 1s all; */
+}
+
+/* /div#skills:hover .skills {
+    background-color: rgba(255, 255, 255, 0.384);
+}  */
+
+/* @media screen and (max-width: 750px) {
+    .side p {
+        font-size: 15vw;
+        position: relative;
+        top: 50%;
+        left: 0;
+        transform: rotate(0);
+    }
+} */
